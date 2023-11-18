@@ -1,0 +1,64 @@
+body {
+    viewport-fit: 100%;
+    background-color: rgb(136, 172, 226)
+
+}
+
+#WelcomeT {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px; 
+ color: rgb(214, 71, 71)
+
+}
+
+
+#Box1 { /*ala laatikko*/
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 70px; 
+    line-height: 70px;
+    background-color:  rgb(115, 147, 194);
+    border-radius: 10px;
+    color: rgb(214, 71, 71)
+}
+
+#fileInput { /* valitseppa tiedostoppi*/
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    transform: translateX(-40%);
+
+}
+#DiscordLink { /*arvaappa*/
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#outputText {  /*ei tiedoston sisältöä*/
+    position: fixed;
+    top: 35%;
+    left: 60%;
+    transform: translateX(-40%);
+
+}
+#output { /*!!!tiedoston sisältö!!!*/
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+color: rgb(218, 81, 81)
+}
+#InfoText {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px; 
+ color: rgb(214, 71, 71)
+}

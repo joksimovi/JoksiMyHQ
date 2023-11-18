@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=5.0">
+       
+       
+        <a href="https://discord.gg/35QeCx4Txf"id="DiscordLink">
+            Discord
+          </a>
+
+          <link rel="stylesheet" href="style.css">
+        <title >
+            JoksimovHQ
+         </title>
+
+         <title id="TitleReadText">Read File</title>
+    </head>
+    <body>
+        <input type="file" id="fileInput" accept=".txt, .csv, .html, .css" />
+        
+        <button onclick="readFile()"id="outputText">Read file</button>
+        <div id="output"></div>
+    
+        <script>
+            function readFile() {
+
+                const fileInput = document.getElementById('fileInput');
+                const outputDiv = document.getElementById('output');
+    
+                const file = fileInput.files[0];
+                const allowedExtensions = ['.txt', '.csv'];
+
+                if (file) {
+                    const reader = new FileReader();
+    
+                    reader.onload = function (e) {
+                        const content = e.target.result;
+                        outputDiv.innerText = content;
+                    };
+    
+                    reader.readAsText(file);
+                } else {
+                    outputDiv.innerText = "Select a file.";
+                }
+             }
+            
+        </script>
+    
+    <div class="container"id="WelcomeT">
+        <h2>
+            Welcome!
+        </h2>
+       
+    </div>
+      
+    <div class="container"id="Box1">
+        im nothing like yall 😎😭😭😭
+    </div>
+        
+        <div class="container"id="InfoText">
+           <p><em> Read any .txt, .csv, .html, .css,... files quick in browser</em></p>
+        </div>
+
+        <div class="content"id="extraContent"></div>
+    </body>
+  
+</html>
