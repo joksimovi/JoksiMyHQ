@@ -3,69 +3,94 @@
 <html lang="en">
  
     <head>
-      
+        <style>
+            html {
+                scrollbar-width: normal;
+                
+            }
+
+            </style>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=5.0">
        
        
-        <a href="https://discord.gg/35QeCx4Txf"id="DiscordLink">
-            Discord
-          </a>
+        
 
           <link rel="stylesheet" href="style.css">
         <title >
-            JoksimovHQ
+            JoksiMyHQ Home
          </title>
 
-         <title id="TitleReadText">Read File</title>
+         
     </head>
     <body>
-        <input type="file" id="fileInput" accept=".txt, .csv, .html, .css" />
-        
-        <button onclick="readFile()"id="outputText">Read file</button>
-        <div id="output"></div>
-    
-        <script>
-            function readFile() {
-
-                const fileInput = document.getElementById('fileInput');
-                const outputDiv = document.getElementById('output');
-    
-                const file = fileInput.files[0];
-                const allowedExtensions = ['.txt', '.csv'];
-
-                if (file) {
-                    const reader = new FileReader();
-    
-                    reader.onload = function (e) {
-                        const content = e.target.result;
-                        outputDiv.innerText = content;
-                    };
-    
-                    reader.readAsText(file);
-                } else {
-                    outputDiv.innerText = "Select a file.";
-                }
-             }
-            
-        </script>
-    
+       
     <div class="container"id="WelcomeT">
         <h2>
-            Welcome!
-        </h2>
+            <strong>Welcome to the homepage of JoksiMyHQ!</strong>
+          </h2>
        
     </div>
       
     <div class="container"id="Box1">
         im nothing like yall 😎😭😭😭
     </div>
+    <div class="container"id="Box2">
         
-        <div class="container"id="InfoText">
-           <p><em> Read any .txt, .csv, .html, .css,... files quick in browser</em></p>
+         JoksiMyHQ is a free time project for the person who is writing this. If you wish to support my projects you can join the Discord or check out my GitHub profile, both links at the bottom of this page!
+    </div>
+<div class="container"id="Box3">
+   <strong>News</strong>
+</div>
+
+<div class="container"id="Box4">
+    <strong>Features</strong>
+ </div>
+ <button id="LoginB">Login</button>
+ <button id="SignupB">Signup</button>
+
+<div class="container"id="feedbackBox">
+    <div id="boxTitle"><strong>Contributing</strong> </div>
+   
+    <dl>
+        <dt><strong>Visiting</strong></dt>
+        <dd>Just visiting this site is very helpful!</dd>
+
+        <dt><strong>Helping</strong></dt>
+        <dd>If you want to assist JoksiMyHQ, well you can!</dd>
+
+<dt><strong>Building</strong></dt>
+<dd>You can help this website by helping to build it or suggest code</dd>
+    </dl>
+</div>
+
+    <div class="container"id="AboutText">
+        <strong>About JoksiMyHQ</strong>
         </div>
 
-        <div class="content"id="extraContent"></div>
+    <footer id="foot">
+        <p>&copy; 2023 JoksiMyHQ</p>
+    </footer>
+        <div id="topBar"></div>
+        <div id="centerBar"></div>
+        <div id="sideBar"></div>
+        <div style="height: 150px;">
+            <!-- More content goes here -->
+        </div>
+<div class="link-container">
+    <a href="https://discord.gg/35QeCx4Txf">
+        Discord
+      </a>
+
+      <a href="https://github.com/joksimovi">
+        GitHub
+      </a>
+
+</div>
+<h2 style="float: left; margin: 0; position: absolute; top: 0; left: 5px; color:rgb(247, 244, 242);">
+    JoksiMyHQ
+</h2>
     </body>
   
 </html>
