@@ -1,4 +1,3 @@
-# joksimovhQ
-silly little website
-made by joksimov
-im pretty new so yeah, you can import .txt or .csv files and read them in browser
+# JoksiMyHQ
+take the code if u want to 😭
+spoiler: it sucks
